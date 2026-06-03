@@ -3,7 +3,7 @@ name: Create Release on Tag
 on:
   push:
     tags:
-      - "v*.*.*"
+      - "v24.10.7"
   workflow_call:
     inputs:
       tag_name:
@@ -12,15 +12,15 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'OpenWRT version (e.g., 24.10.5)'
+        description: 'OpenWRT version 24.10.7'
         required: true
         type: string
       targets:
-        description: 'Targets (comma-separated, optional)'
+        description: 'Targets bcm27xx,bcm47xx,bcm4908,bcm53xx,mediatek,ipq806,octeon,qualcommax,ramips,rockhip,x86'
         required: false
         type: string
       subtargets:
-        description: 'Subtargets (comma-separated, optional)'
+        description: 'Subtargets bcm2711,bcm2712,filogic,mt7621'
         required: false
         type: string
 

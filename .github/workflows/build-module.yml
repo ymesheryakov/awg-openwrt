@@ -16,7 +16,7 @@ on:
         required: true
         type: string
       targets:
-        description: 'Targets bcm27xx,bcm47xx,bcm4908,bcm53xx,mediatek,ipq806,octeon,qualcommax,ramips,rockhip,x86'
+        description: 'Targets bcm27xx,bcm47xx,bcm4908,bcm53xx,mvebu,mediatek,ipq806,octeon,qualcommax,ramips,rockhip,x86'
         required: false
         type: string
       subtargets:

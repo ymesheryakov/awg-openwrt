@@ -12,15 +12,15 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'OpenWRT version (24.10.7)'
+        description: 'OpenWRT version 24.10.7'
         required: true
         type: string
       targets:
-        description: 'Targets (bcm27xx,bcm47xx,bcm4908,bcm53xx,ipq40xx,ipq806x,mvebu,mediatek,octeon,qualcommax,ramips,rockhip,x86)'
+        description: 'Targets bcm27xx,bcm47xx,bcm4908,bcm53xx,ipq40xx,ipq806x,mvebu,mediatek,octeon,qualcommax,ramips,rockhip,x86'
         required: false
         type: string
       subtargets:
-        description: 'Subtargets (bcm2711,bcm2712,filogic,mt7621)'
+        description: 'Subtargets bcm2711,bcm2712,filogic,mt7621'
         required: false
         type: string
 
